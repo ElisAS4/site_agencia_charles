@@ -3,181 +3,252 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agência Charles | Marketing Digital Premium</title>
+  <title>Agência Charlis | Marketing Digital Premium</title>
+
+  <!-- Fonts e Ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
-    body { background:#0e0e11; color:#f2f2f2; }
-
-    header {
-      min-height:100vh;
-      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:40px 20px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
 
-    header img { max-width:150px; margin-bottom:25px; }
+    body {
+      background: #0e0e11;
+      color: #f2f2f2;
+    }
 
-    header h1 { font-size:3rem; margin-bottom:20px; }
-    header p { max-width:720px; margin:0 auto 35px; color:#d1d1d1; font-size:1.15rem; }
+    /* HEADER */
+    header {
+      min-height: 100vh;
+      background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      max-width: 150px;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 0 auto 35px;
+      color: #d1d1d1;
+      font-size: 1.15rem;
+    }
 
     .btn-whatsapp {
-      display:inline-block;
-      padding:18px 45px;
-      background:#25D366;
-      color:#fff;
-      text-decoration:none;
-      border-radius:50px;
-      font-weight:600;
-      box-shadow:0 20px 50px rgba(37,211,102,.4);
-      transition:.3s;
+      display: inline-block;
+      padding: 18px 45px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      box-shadow: 0 20px 50px rgba(37,211,102,.4);
+      transition: .3s;
     }
-    .btn-whatsapp:hover { transform:translateY(-4px); }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-4px);
+    }
 
     .platforms {
-      margin-top:35px;
-      display:flex;
-      justify-content:center;
-      gap:35px;
-      font-size:2rem;
-      color:#cfcfcf;
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      font-size: 2rem;
+      color: #cfcfcf;
     }
 
-    section { padding:100px 20px; max-width:1200px; margin:auto; }
-    h2 { text-align:center; font-size:2.4rem; margin-bottom:60px; }
+    /* SECTIONS */
+    section {
+      padding: 100px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
 
+    h2 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 60px;
+    }
+
+    /* SERVICES */
     .services, .testimonials {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:35px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
     }
 
     .card {
-      background:#16161d;
-      padding:35px 30px;
-      border-radius:20px;
-      box-shadow:0 20px 60px rgba(0,0,0,.55);
-      transition:.3s;
-      text-align:center;
+      background: #16161d;
+      padding: 35px 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.55);
+      transition: .3s;
+      text-align: center;
     }
-    .card:hover { transform:translateY(-8px); }
 
-    .card h3 { color:#6dd5fa; margin-bottom:15px; }
-    .card p { color:#cfcfcf; line-height:1.6; }
+    .card:hover {
+      transform: translateY(-8px);
+    }
 
+    .card h3 {
+      color: #6dd5fa;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #cfcfcf;
+      line-height: 1.6;
+    }
+
+    /* TESTIMONIALS */
     .testimonial img {
-      width:90px;
-      height:90px;
-      border-radius:50%;
-      object-fit:cover;
-      margin-bottom:15px;
-      border:3px solid #25D366;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #25D366;
     }
 
+    /* ABOUT */
     .about {
-      img: max-width:150px; margin-bottom:25px; 
-      background:linear-gradient(135deg,#141e30,#243b55);
-      padding:70px 50px;
-      border-radius:25px;
-      text-align:center;
-      box-shadow:0 30px 80px rgba(0,0,0,.6);
+      background: linear-gradient(135deg,#141e30,#243b55);
+      padding: 70px 50px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 30px 80px rgba(0,0,0,.6);
     }
 
+    .about p {
+      max-width: 800px;
+      margin: 0 auto 15px;
+      color: #d1d1d1;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-top: 30px;
+    }
+
+    /* FOOTER */
     footer {
-         img: max-width:150px; margin-bottom:25px; 
-      background:#000;
-      padding:30px 20px;
-      text-align:center;
-      color:#888;
-      font-size:.9rem;
+      background: #000;
+      padding: 30px 20px;
+      text-align: center;
+      color: #888;
+      font-size: .9rem;
     }
 
-    @media(max-width:768px){ header h1{font-size:2.2rem;} }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<header>
-  <div>
-    <img src="site_agencia_charles.png" alt="Agência Charles">
-    <h1>Agência Marketing Charlis</h1>
-    <p>Marketing digital premium para empresas, pessoas e marcas que buscam crescimento real e autoridade online.</p>
-    <a class="btn-whatsapp" href="https://wa.me/5519994716723" target="_blank">Solicitar Orçamento no WhatsApp</a>
+  <!-- HEADER -->
+  <header>
+    <div>
+      <img src="site_agencia_charles.png" alt="Agência Charlis">
+      <h1>Agência Marketing Charlis</h1>
+      <p>Marketing digital premium para empresas, pessoas e marcas que buscam crescimento real e autoridade online.</p>
+      <a class="btn-whatsapp" href="https://wa.me/5519994716723" target="_blank">Solicitar Orçamento no WhatsApp</a>
 
-    <div class="platforms">
-      <i class="fab fa-instagram"></i>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-tiktok"></i>
-      <i class="fab fa-google"></i>
+      <div class="platforms">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-tiktok"></i>
+        <i class="fab fa-google"></i>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<section>
-  <h2>Serviços</h2>
-  <div class="services">
-    <div class="card"><h3>Redes Sociais</h3><p>Conteúdo estratégico, profissional e focado em crescimento.</p></div>
-    <div class="card"><h3>Tráfego Pago</h3><p>Campanhas no Google e Meta Ads com foco em conversão.</p></div>
-    <div class="card"><h3>Criação de Sites</h3><p>Sites modernos, rápidos e focados em vendas.</p></div>
-    <div class="card"><h3>Branding</h3><p>Identidade visual forte e posicionamento premium.</p></div>
-    <div class="card"><h3>Apoio a Influencers</h3><p>Campanhas de imagens e conversão.</p></div>
-    <div class="card"><h3>Sistema de Inteligência em Marketing</h3><p>Campanhas automaticas e no Google, Instagram e Meta Ads com foco em conversão.</p></div>
-  </div>
-</section>
-
-<section>
-  <h2>O que nossos clientes dizem</h2>
-  <div class="testimonials">
-
-    <div class="card testimonial">
-      <img src="https://randomuser.me/api/portraits/men/32.jpg">
-      <h3>Marcos Almeida</h3>
-      <p>Corretor de Imóveis</p>
-      <p>"Depois da Agência Charles meus leads dispararam e comecei a fechar vendas toda semana."</p>
+  <!-- SERVICES -->
+  <section>
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="card"><h3>Redes Sociais</h3><p>Conteúdo estratégico, profissional e focado em crescimento.</p></div>
+      <div class="card"><h3>Tráfego Pago</h3><p>Campanhas no Google e Meta Ads com foco em conversão.</p></div>
+      <div class="card"><h3>Criação de Sites</h3><p>Sites modernos, rápidos e focados em vendas.</p></div>
+      <div class="card"><h3>Branding</h3><p>Identidade visual forte e posicionamento premium.</p></div>
+      <div class="card"><h3>Apoio a Influencers</h3><p>Campanhas estratégicas de imagem e conversão.</p></div>
+      <div class="card"><h3>SAM – Sistema Autônomo de Marketing</h3><p>Campanhas automáticas no Google, Instagram e Meta Ads com foco em conversão.</p></div>
     </div>
+  </section>
 
-    <div class="card testimonial">
-      <img src="https://randomuser.me/api/portraits/women/45.jpg">
-      <h3>Ana Paula Ribeiro</h3>
-      <p>Corretora de Consórcio</p>
-      <p>"Profissionalismo total. Estratégia clara e resultados reais."</p>
+  <!-- TESTIMONIALS -->
+  <section>
+    <h2>O que nossos clientes dizem</h2>
+    <div class="testimonials">
+
+      <div class="card testimonial">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+        <h3>Marcos Almeida</h3>
+        <p>Corretor de Imóveis</p>
+        <p>"Depois da Agência Charlis meus leads dispararam e comecei a fechar vendas toda semana."</p>
+      </div>
+
+      <div class="card testimonial">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">
+        <h3>Ana Paula Ribeiro</h3>
+        <p>Corretora de Consórcio</p>
+        <p>"Profissionalismo total. Estratégia clara e resultados reais."</p>
+      </div>
+
+      <div class="card testimonial">
+        <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="">
+        <h3>Ricardo Souza</h3>
+        <p>Empresário</p>
+        <p>"Hoje minha empresa tem autoridade digital e clientes qualificados todos os dias."</p>
+      </div>
+
+      <div class="card testimonial">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+        <h3>Fernanda Lopes</h3>
+        <p>Consultora Comercial</p>
+        <p>"Campanhas bem pensadas e retorno visível desde o primeiro mês."</p>
+      </div>
+
     </div>
+  </section>
 
-    <div class="card testimonial">
-      <img src="https://randomuser.me/api/portraits/men/55.jpg">
-      <h3>Ricardo Souza</h3>
-      <p>Empresário</p>
-      <p>"Hoje minha empresa tem autoridade digital e clientes qualificados todos os dias."</p>
+  <!-- ABOUT -->
+  <section>
+    <h2>Quem Somos</h2>
+    <div class="about">
+      <p>A Agência Charlis é uma empresa inovadora no processo de criação de marketing digital.</p>
+      <p><strong>SAM – Sistema Autônomo de Marketing</strong></p>
+      <img src="image4.png" alt="Agência Charlis">
     </div>
+  </section>
 
-    <div class="card testimonial">
-      <img src="https://randomuser.me/api/portraits/women/68.jpg">
-      <h3>Fernanda Lopes</h3>
-      <p>Consultora Comercial</p>
-      <p>"Campanhas bem pensadas e retorno visível desde o primeiro mês."</p>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h2>Quem Somos</h2>
-  <div class="about">
-    <p>A Agência Charlis um empresa inovadora do processo de criação de marketing.</p>
-     <p>SAM- Sistema Autônomo de Marketing.</p>
-    <img src="image4.png" alt="Agência Charles">
-  
-  </div>
-</section>
-
-<footer>
-  © 2025 Agência Charlis • Marketing Digital Premium
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Agência Charlis • Marketing Digital Premium
+  </footer>
 
 </body>
 </html>
